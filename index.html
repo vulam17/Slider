@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <script src="https://kit.fontawesome.com/ea9a0dec7a.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container {
+            width: 80%;
+            height: 750px;
+            margin:50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img
+        {
+            height:100%;
+            width:1125px;
+            display:block;
+        }
+        i
+        {
+            font-size:100px;
+            margin:auto;
+            cursor: pointer;
+            color:maroon;
+        }
+        #img2, #img3
+        {
+            display:none;
+        }
+        p
+        {
+            text-align: center;
+            font-size: 32px;
+            color: purple;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <i onclick = left() class="fa-solid fa-circle-chevron-left"></i>
+        <img id = "img1" src = "img1.jpeg">
+        <img id = "img2" src = "img2.jpeg">
+        <img id = "img3" src = "img3.jpeg">
+        <i onclick = right() class="fa-solid fa-circle-chevron-right"></i>
+    </div>
+    <p id = "imgName">Ảnh số 1</p>
+</body>
+
+</html>
